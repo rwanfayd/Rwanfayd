@@ -1,0 +1,83 @@
+<html>
+<head>
+<title> Products Rate </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="white">
+<h1> Product Rate </h1>
+<h3> Types of products </h3></center>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'phone')">Mobile Phones</button>
+  <button class="tablinks" onclick="openCity(event, 'car')">Cars</button>
+</div>
+
+<div id="phone" class="tabcontent">
+  <h3>Mobile Phones</h3>
+  <a href="javascript: changeText(1);">
+   <img src="14promax.png" width="200px" height="200px"/>
+</a>
+<a href="javascript: changeText(2);">
+   <img src="note12.png" width="200px" height="200px"/>
+</a>
+<a href="javascript: changeText(3);">
+   <img src="reno8.png" width="200px" height="200px"/>
+</a>
+<a href="javascript: changeText(4);">
+   <img src="S23ultra.png" width="200px" height="200px"/>
+</a>
+<a href="javascript: changeText(5);">
+   <img src="realme10.png" width="200px" height="200px"/>
+</a>
+</div>
+<div id="car" class="tabcontent">
+  <h3>Cars</h3>
+  <a href="javascript: changeText(6);">
+   <img src="bmwe36.png" width="200px" height="200px"/>
+</a>
+<a href="javascript: changeText(7);">
+   <img src="eqe2023.png" width="200px" height="200px"/>
+</a>
+<a href="javascript: changeText(8);">
+   <img src="corolla2023.png" width="200px" height="200px"/>
+</a>
+<a href="javascript: changeText(9);">
+   <img src="cerato2023.png" width="200px" height="200px"/>
+</a>
+<a href="javascript: changeText(10);">
+   <img src="elantra2023.png" width="200px" height="200px"/>
+</a>
+</div>
+<p id="details"></p>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function changeText(value) {
+    var div = document.getElementById("details");
+    var text = "";
+    if (value == 1) text += "The iPhone 14 Pro Max is the most expensive phone from Apple , and it has been significantly developed from the previous generation iPhone 13 Pro Max, as it comes with a different screen with support for the Always On display feature, so that you can know notifications in real time and quickly, with greatly improved cameras and the use of a more powerful processor. .. So let's get acquainted with the rest of the specifications and whether the phone is worth buying or as follows.";
+    if (value == 2) text += "Xiaomi announced the smallest member of the Redmi Note 12 family, which is the Xiaomi Redmi Note 12, the 4G version, as it comes with a 6.67-inch AMOLED screen and FHD + resolution with a refresh rate of 120 Hz with a new Snapdragon 685 processor with a 5000 mAh battery and supports 33W fast charging. .. So let's get to know the full specifications of the Xiaomi Redmi Note 12 4G phone, what are its most important advantages and disadvantages, and is it worth buying or not, as follows.";
+    if (value == 3) text += "Oppo announced its new Oppo Reno 8T phone with a good design with an AMOLED screen to get a good color and brightness experience with a 100-megapixel rear camera with a 32-megapixel selfie camera with a 5000 mAh battery with 33W fast charging, so let us We know the full specifications of the Oppo Reno 8T phone, what are its most important advantages and disadvantages, and whether it is worth buying or not, as follows.";
+	if (value == 4) text += "Learn about the best flagship phone from Samsung, which is the beast, the Samsung Galaxy S23 Ultra, and it comes with the strongest specifications, as it comes with a Snapdragon 8 Gen 2 processor with excellent front and rear cameras with a 120Hz AMOLED screen. Will these specifications be sufficient for you to buy and own the phone, so let us get to know the full specifications For the Samsung Galaxy S23 Ultra, what are its most important advantages and disadvantages, and is it worth buying or not, as follows.";
+	if (value == 5) text += "Realme has announced its latest phone, the Realme 10 , which comes in the middle class with acceptable specifications, as it comes with a Super AMOLED screen with a refresh rate of 90Hz with a large-capacity battery with a charging speed of 33W with the use of a Helio G99 processor, so let us get to know the full specifications of the phone and what are its most important advantages and disadvantages Is it worth buying or not, as follows.";
+	if (value == 6) text += "The BMW E36, model 1992, was introduced by the German manufacturer, and the BMW E36 belongs to the category of large-size sedans, and it won a great place among all citizens of the world and exhausted Egypt, thanks to its modern features, distinctive design, and powerful engine.";
+	if (value == 7) text += "The Mercedes-Benz EQE competes with very well-known competitors . This German Sedan car is available in 1 versions . Known for its technology, the Mercedes-Benz EQE comes with features such as: Acoustic Hood, Alcantara seats, 360-Degree Camera, ABS (Anti-lock Brake System), among others.";
+	if (value == 8) text += "With a starting price of EGP 387,000, the Toyota Corolla competes with very well-known competitors . This Japanese Sedan car is available in 10 versions . Available in 2 engine options, the Corolla offers new car buyers a 1.6-liter and 1.8-liter engine to choose from. Known for its reliability, the Toyota Corolla comes with features such as: Acoustic Hood, Bonnet Light, Active Steering, ABS (Anti-lock Brake System), among others.";
+	if (value == 9) text += "With a starting price of EGP 299,900, the Kia Cerato competes with very well-known competitors . This Korean Sedan car is available in 4 versions . The Cerato offers new car buyers 1.6-cc engine. Known for its value for money, the Kia Cerato comes with features such as: Acoustic Hood, Bonnet Light, 12V Socket - Front Only, ABS (Anti-lock Brake System), among others.";
+	if (value == 10) text += "With a starting price of EGP 323,000, the Hyundai Elantra competes with very well-known competitors . This Korean sedan car is available in 10 versions . The average market price for the Hyundai Elantra in the EGYPT is EGP 310,780 . The Elantra offers new car buyers 1.6-cc engine. Known for its value for money, the Hyundai Elantra comes with features such as: Acoustic Hood, Central Locking, 12V Socket - Front Only, Moving object detection system, among others.";
+    div.innerHTML = text;
+}
+</script>
+</body>
+</html>
